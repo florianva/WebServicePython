@@ -1,5 +1,4 @@
 __*
 .idea
-*.sqlite3
 
 webservice/migrations
