@@ -8,3 +8,11 @@ class Book(models.Model):
 
     def __str__(self):
         return self.titre
+
+
+class Member(models.Model):
+    idBook = models.ForeignKey('Book')
+    name = models.CharField(max_length=100, null=True)
+
+    def __str__(self):
+        return self.titre
