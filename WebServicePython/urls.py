@@ -37,4 +37,6 @@ router.register(r'members', MemberViewSet)
 urlpatterns = [
     url(r'^books/$', views.book_list),
     url(r'^books/(?P<pk>[0-9]+)/$', views.book_detail),
+    url(r'^members/$', views.member_list),
+    url(r'^members/(?P<pk>[0-9]+)/$', views.member_detail),
 ]
