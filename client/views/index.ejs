@@ -93,7 +93,7 @@
 
         $.get('http://127.0.0.1:8000/members/', function (data) {
             for(var i in data){
-                $('#body-members').append('<tr><td>'+data[i].id+'</td><td>'+data[i].id+'</td><td>'+data[i].name+'</td></tr>')
+                $('#body-members').append('<tr><td>'+data[i].id+'</td><td>'+data[i].idBook+'</td><td>'+data[i].name+'</td></tr>')
             }
         });
 
