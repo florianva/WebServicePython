@@ -2,4 +2,5 @@ __*
 .idea
 
 webservice/migrations
-frontend/bower_components
+client/public/bower_components
+client/node_modules
