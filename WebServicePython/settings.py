@@ -25,7 +25,7 @@ SECRET_KEY = '2@c79bngz9j=bx&k=ee(jm2=&a^4$%6@d&73c%^u-s4z)&_1m-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost:8000', '127.0.0.1:8000','localhost', '127.0.0.1','http://localhost']
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -46,11 +46,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webservice',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -59,6 +61,23 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'WebServicePython.urls'
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost',
+    'localhost',
+    '127.0.0.1',
+    'localhost:8000',
+    '127.0.0.1:8000'
+)
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost',
+    'localhost',
+    '127.0.0.1',
+    'localhost:8000',
+    '127.0.0.1:8000'
+)
 
 TEMPLATES = [
     {

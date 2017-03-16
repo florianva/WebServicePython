@@ -2,3 +2,4 @@ __*
 .idea
 
 webservice/migrations
+frontend/bower_components

@@ -1,0 +1,20 @@
+{
+  "name": "WebServiceFrontEnd",
+  "homepage": "https://github.com/florianva/WebServicePython",
+  "authors": [
+    "Geoffrey <geoffrey.pruvost@hotmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "web-service"
+  ],
+  "license": "GPL3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
