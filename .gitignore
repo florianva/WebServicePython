@@ -1,6 +1,6 @@
 __*
 .idea
 
-webservice/migrations
+server/webservice/migrations
 client/public/bower_components
 client/node_modules
