@@ -1,5 +1,5 @@
 {
-  "name": "WebServiceFrontEnd",
+  "name": "webservice-frontend",
   "homepage": "https://github.com/florianva/WebServicePython",
   "authors": [
     "Geoffrey <geoffrey.pruvost@hotmail.com>"
@@ -16,5 +16,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
