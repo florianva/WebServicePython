@@ -55,40 +55,40 @@ Pour lancer le client depuis un navigateur:
 	
  ## Documentation
  
-  ### GET http://localhost/books/
+  ### GET http://localhost:8000/books/
   return json data with all books
  
-  ### GET http://localhost/books/ID
+  ### GET http://localhost:8000/books/ID
   return json data with the detail of the book number ID
  
-  ### POST http://localhost/books/
+  ### POST http://localhost:8000/books/
   create a book with data send in the body request. 
   Exemple of data : 
   ```
  {"name": "star wars", "category": "science-fiction"}
   ```
  
-  ### PUT http://localhost/books/ID
+  ### PUT http://localhost:8000/books/ID
   update the book ID with data send in the body request. 
   Exemple of data : 
   ```
  {"name": "wars des étoiles", "category": "science-pas-fiction"}
   ```
   
-  ### GET http://localhost/members/
+  ### GET http://localhost:8000/members/
   return json data with all members
  
-  ### GET http://localhost/members/ID
+  ### GET http://localhost:8000/members/ID
   return json data with the detail of the member number ID
  
-  ### POST http://localhost/members/
+  ### POST http://localhost:8000/members/
   create a member with data send in the body request. 
   Exemple of data : 
   ```
 {"idBook": "2", "name":"kirikou le petit"}
   ```
  
-  ### PUT http://localhost/members/ID
+  ### PUT http://localhost:8000/members/ID
   update the members ID with data send in the body request. 
   Exemple of data : 
   ```
