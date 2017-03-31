@@ -52,6 +52,50 @@ Pour lancer la requête sur postman:
 Pour lancer le client depuis un navigateur: 
  
   	http://localhost:3000 
+	
+ ## Documentation
+ 
+  ### GET http://localhost/books/
+  return json data with all books
+ 
+  ### GET http://localhost/books/ID
+  return json data with the detail of the book number ID
+ 
+  ### POST http://localhost/books/
+  create a book with data send in the body request. 
+  Exemple of data : 
+  ```
+ {"name": "star wars", "category": "science-fiction"}
+  ```
+ 
+  ### PUT http://localhost/books/ID
+  update the book ID with data send in the body request. 
+  Exemple of data : 
+  ```
+ {"name": "wars des étoiles", "category": "science-pas-fiction"}
+  ```
+  
+  ### GET http://localhost/members/
+  return json data with all members
+ 
+  ### GET http://localhost/members/ID
+  return json data with the detail of the member number ID
+ 
+  ### POST http://localhost/members/
+  create a member with data send in the body request. 
+  Exemple of data : 
+  ```
+{"idBook": "2", "name":"kirikou le petit"}
+  ```
+ 
+  ### PUT http://localhost/members/ID
+  update the members ID with data send in the body request. 
+  Exemple of data : 
+  ```
+{"idBook": "2", "name":"kirikou le grand"}
+  ```
+ 
+
  
  
  
